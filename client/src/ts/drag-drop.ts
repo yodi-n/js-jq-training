@@ -8,6 +8,7 @@ export function makeTileDraggable(tile: JQuery<HTMLElement>): void {
 }
 
 export function makeListDroppable(management: TodoManagement) {
+  // TODO: status -> TodoStatus
   return (list: JQuery<HTMLElement>, status: string): JQuery<HTMLElement> => list.droppable({
     accept: (ui) => {
       switch (status) {
